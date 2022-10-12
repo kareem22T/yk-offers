@@ -1,0 +1,188 @@
+.access-body {
+  background-image: url("../images/where do you live - BG pattern.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+  gap: 40px;
+  min-height: 100vh;
+  padding: 80px 20px;
+}
+.access-body h1 {
+  font-size: clamp(1.875rem, calc(1.5074rem + 1.9608vw), 3.125rem);
+  font-weight: 600;
+  margin-bottom: clamp(0rem, calc(-0.5515rem + 2.9412vw), 1.875rem);
+}
+.access-body p {
+  font-weight: 500;
+  font-size: clamp(1rem, calc(0.7426rem + 1.3725vw), 1.875rem);
+}
+.access-body .pre-btn-parent,
+.access-body .automatic {
+  display: flex;
+  justify-content: space-between;
+  padding: 0 clamp(1.25rem, calc(0.8824rem + 1.9608vw), 2.5rem);
+  width: 100%;
+  position: fixed;
+  bottom: clamp(1.25rem, calc(0.8824rem + 1.9608vw), 2.5rem);
+  z-index: 4441;
+}
+.access-body .pre-btn-parent .pre-btn,
+.access-body .pre-btn-parent button,
+.access-body .automatic .pre-btn,
+.access-body .automatic button {
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  font-size: clamp(0.75rem, calc(0.511rem + 1.2745vw), 1.5625rem);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+.access-body .pre-btn-parent .pre-btn span,
+.access-body .pre-btn-parent button span,
+.access-body .automatic .pre-btn span,
+.access-body .automatic button span {
+  z-index: 22;
+  background: #fffdfd;
+  backdrop-filter: blur(10px);
+  border-radius: 35px;
+  padding: clamp(0.625rem, calc(0.4963rem + 0.6863vw), 1.0625rem) clamp(0.625rem, calc(0.4044rem + 1.1765vw), 1.375rem);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: clamp(0.1875rem, calc(0.0037rem + 0.9804vw), 0.8125rem);
+  height: 100%;
+  font-size: clamp(0.75rem, calc(0.3272rem + 2.2549vw), 2.1875rem);
+  transition: all .3s ease-out;
+}
+.access-body .pre-btn-parent .pre-btn span i,
+.access-body .pre-btn-parent button span i,
+.access-body .automatic .pre-btn span i,
+.access-body .automatic button span i {
+  font-size: clamp(1rem, calc(1.2rem + 0.9804vw), 2.1875rem);
+  transition: all .3s ease-out;
+}
+.access-body .pre-btn-parent .pre-btn span:hover,
+.access-body .pre-btn-parent button span:hover,
+.access-body .automatic .pre-btn span:hover,
+.access-body .automatic button span:hover {
+  background-color: white;
+  color: #FF1919;
+}
+.access-body .pre-btn-parent .pre-btn span:hover i,
+.access-body .pre-btn-parent button span:hover i,
+.access-body .automatic .pre-btn span:hover i,
+.access-body .automatic button span:hover i {
+  color: #FF1919;
+}
+.access-body .pre-btn-parent .pre-btn::after,
+.access-body .pre-btn-parent button::after,
+.access-body .automatic .pre-btn::after,
+.access-body .automatic button::after {
+  content: '';
+  width: calc(100% + 5px);
+  height: calc(100% + 5px);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 35px;
+  box-shadow: -5px 10px 4px rgba(0, 0, 0, 0.25);
+  background: radial-gradient(31.8% 130% at 74.65% 32%, #FF4242 0%, #FFFFFF 100%), linear-gradient(0deg, rgba(255, 153, 153, 0.01), rgba(255, 153, 153, 0.01));
+}
+.access-body .select-location-options {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+}
+@media (max-width: 800px) {
+  .access-body .select-location-options {
+    flex-direction: column;
+  }
+}
+.access-body .select-location-options .line {
+  height: 420px;
+  width: 1px;
+  background: black;
+}
+@media (max-width: 800px) {
+  .access-body .select-location-options .line {
+    width: 100%;
+    height: 1px;
+  }
+}
+.access-body .select-location-options .manual {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: calc(50% - 41px);
+  gap: 15px;
+}
+@media (max-width: 800px) {
+  .access-body .select-location-options .manual {
+    justify-content: center;
+    width: 100%;
+    gap: 5px;
+  }
+}
+.access-body .select-location-options .manual .img {
+  width: clamp(9.375rem, calc(3.8603rem + 29.4118vw), 28.125rem);
+  height: clamp(9.375rem, calc(3.8603rem + 29.4118vw), 28.125rem);
+  overflow: hidden;
+}
+.access-body .select-location-options .manual .img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.access-body .select-location-options .manual form {
+  display: flex;
+  flex-direction: column;
+  gap: clamp(1.125rem, calc(0.9963rem + 0.6863vw), 1.5625rem);
+  font-size: clamp(1rem, calc(0.8897rem + 0.5882vw), 1.375rem);
+}
+.access-body .select-location-options .manual form button {
+  background: rgba(255, 153, 153, 0.05);
+  backdrop-filter: blur(15px);
+  box-shadow: -2px 5px 4px rgba(0, 0, 0, 0.25);
+  border: none;
+  border-radius: 25px;
+  padding: clamp(0.5rem, calc(0.3162rem + 0.9804vw), 1.125rem) clamp(1.0625rem, calc(0.8235rem + 1.2745vw), 1.875rem);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+}
+.access-body .select-location-options .automatic {
+  width: calc(50% - 41px);
+  position: static;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+}
+@media (max-width: 800px) {
+  .access-body .select-location-options .automatic {
+    width: 100%;
+  }
+}
+.access-body .select-location-options .automatic a span {
+  background: #ffdddd;
+}
+.access-body .select-location-options .automatic a span:hover {
+  background: #fdf9f9;
+  color: #7b7b7b;
+  cursor: pointer;
+}
+.access-body .select-location-options .automatic a span:hover i {
+  color: #7b7b7b;
+}
+
+/*# sourceMappingURL=access.css.map */
